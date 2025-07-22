@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ichcho Zuhir">
+    <meta name="description"
+        content="Esempio di modulo di iscrizione con validazione JavaScript, per mostrare competenze in HTML, CSS e JS.">
+    <meta name="keywords"
+        content="form, validazione, JavaScript, HTML5, CSS3, frontend, modulo, iscrizione, portfolio, demo sviluppatore">
+    <meta name="robots" content="index, follow">
+
+    <!-- Collegamento ai fogli di stile -->
+    <link rel="stylesheet" href="Stile/style.css">
+    <link rel="stylesheet" href="Stile/responsive.css">
+
+    <title>Form di Iscrizione - Demo Portfolio Zuhir</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Validazione del form con JavaScript</h1>
+    </header>
+
+    <main id="iscrizione">
+        <h2 class="titolo sticky">Modulo di Iscrizione</h2>
+        <section class="box-form">
+            <form id="form" action="#" novalidate> <!-- La validazione viene gestita in JavaScript -->
+                <fieldset>
+                    <legend>I Tuoi Dati</legend>
+                    <div class="dati grid">
+
+                        <div class="box-input"> <!-- Nome utente -->
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" required autocomplete="given-name">
+                        </div>
+                        <div class="box-input"> <!-- Cognome utente -->
+                            <label for="cognome">Cognome:</label>
+                            <input type="text" name="cognome" id="cognome" required autocomplete="family-name">
+                        </div>
+                        <div class="box-input"> <!-- Email utente -->
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required autocomplete="email">
+                        </div>
+                        <div class="box-input">
+                            <!-- Password -->
+                            <label for="psw">Password:</label>
+                            <input type="password" name="psw" id="psw" required autocomplete="new-password">
+                        </div>
+                        <div class="box-input"> <!-- Conferma password -->
+                            <label for="pswConferma">Conferma password:</label>
+                            <input type="password" name="pswConferma" id="pswConferma" required
+                                autocomplete="new-password">
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Conferma l'invio del modulo</legend>
+                    <div class="dati">
+                        <button class="btnForm reset" type="reset">Reset</button>
+                        <button class="btnForm invia" type="submit">Invia</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <div id="toast" class="hidden" role="status" aria-live="polite">
+            ✅ Registrazione completata con successo!
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copy">© 2025 Zuhir Ichcho. Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- Collegamento ai file JavaScript -->
+    <script src="JavaScript/classi.js"></script>
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
