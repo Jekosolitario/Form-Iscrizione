@@ -1,0 +1,23 @@
+/* media queries per viewport superori a 600px */
+@media (min-width: 600px) {
+
+    /* i box contenenti i campi input da una colonna diventano due*/
+    div.dati.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* dimensioni input, textarea*/
+    div.dati>input {
+        width: 50%;
+    }
+}
+
+
+/* media queries per viewport sopra 980px */
+@media (min-width: 980px) {
+
+    /* i box contenenti i campi input da una colonna diventano due*/
+    div.dati.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
